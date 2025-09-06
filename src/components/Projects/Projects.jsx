@@ -5,19 +5,19 @@ const projects = [
         title: "ProTrack – DSA Problem Tracker",
         description:
             "A real-time tracker for LeetCode/DSA progress with issue logging, topic categorization, progress analytics, and favorites.",
-        img: "/src/assets/works/1.png",
+        img: "/public/works/1.png",
     },
     {
         title: "SecureVault - A Password Manager",
         description:
             "A fully-featured password manager that uses a zero-knowledge architecture to keep your data private and secure, all while running completely client-side.",
-        img: "/src/assets/works/8.png",
+        img: "/public/works/8.png",
     },
     {
         title: "Link Vault",
         description:
             "A Next.js app to organize and manage links with categories, search, and quick access — designed for productivity and clean UI experience.",
-        img: "/src/assets/works/2.png",
+        img: "/public/works/2.png",
     },
 ];
 

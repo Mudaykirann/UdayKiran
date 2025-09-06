@@ -1,6 +1,6 @@
-import profile from '/src/assets/my1.jpeg';
-import ai from '/src/assets/ai.jpeg';
-import phy from '/src/assets/phy.jpeg';
+import profile from '/public/my1.jpeg';
+import ai from '/public/ai.jpeg';
+import phy from '/public/phy.jpeg';
 import Tabs from '../../components/Tabs/Tabs';
 import Skill from '../../components/Skills/Skill';
 import { FaDownload } from "react-icons/fa";

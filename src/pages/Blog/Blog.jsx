@@ -1,8 +1,7 @@
 
-import blog from '/src/assets/blog.jpeg';
-import code from '/src/assets/code.jpeg';
+import blog from '/public/blog.jpeg';
+import code from '/public/code.jpeg';
 
-// 
 
 function Blog() {
     return (

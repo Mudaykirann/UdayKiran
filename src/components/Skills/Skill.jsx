@@ -6,16 +6,16 @@ import { BiCodeCurly } from "react-icons/bi";
 import { FiKey } from "react-icons/fi";
 
 const skills = [
-    { name: "C", icon: <SiC size={26} color='' className="text-blue-600" /> },
-    { name: "C++", icon: <SiCplusplus size={26} color='' className="text-blue-800" /> },
-    { name: "Java", icon: <FaJava size={26} color='' className="text-red-600" /> },
     { name: "HTML", icon: <FaHtml5 size={26} color='' className="text-orange-500" /> },
     { name: "CSS", icon: <FaCss3Alt size={26} color='' className="text-blue-500" /> },
-    { name: "JavaScript", icon: <FaJs size={26} color='' className="text-yellow-400" /> },
     { name: "TailwindCSS", icon: <SiTailwindcss size={26} color='' className="text-sky-400" /> },
+    { name: "JavaScript", icon: <FaJs size={26} color='' className="text-yellow-400" /> },
     { name: "React", icon: <FaReact size={26} color='' className="text-cyan-400" /> },
     { name: "NodeJS", icon: <FaNodeJs size={26} color='' className="text-green-600" /> },
     { name: "ExpressJS", icon: <SiExpress size={26} color='' className="text-gray-700" /> },
+    { name: "Java", icon: <FaJava size={26} color='' className="text-red-600" /> },
+    { name: "C", icon: <SiC size={26} color='' className="text-blue-600" /> },
+    { name: "C++", icon: <SiCplusplus size={26} color='' className="text-blue-800" /> },
     { name: "MySQL", icon: <SiMysql size={26} color='' className="text-blue-700" /> },
     { name: "Oracle SQL", icon: <SiOracle size={26} color='' className="text-red-700" /> },
     { name: "Linux", icon: <SiLinux size={26} color='' className="" /> },
