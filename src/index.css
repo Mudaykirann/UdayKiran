@@ -1,0 +1,20 @@
+.clash {
+    font-family: 'Clash Grotesk', sans-serif;
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
