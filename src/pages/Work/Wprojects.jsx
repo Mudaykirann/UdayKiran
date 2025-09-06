@@ -39,7 +39,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/ProTracker",
         live: "https://pro-tracker-six.vercel.app/",
-        img: "/public/works/1.png",
+        img: "/works/1.png",
     },
     {
         title: "Link Vault - Link Management App",
@@ -60,7 +60,7 @@ const projects = [
         ],
         github: "https://securevault1.netlify.app/",
         live: "https://link-vault-7tf4.vercel.app/",
-        img: "/public/works/2.png",
+        img: "/works/2.png",
     },
     {
         title: "SecureVault - A Password Manager",
@@ -79,7 +79,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/SecureVault",
         live: "https://securevault1.netlify.app/",
-        img: "/public/works/8.png",
+        img: "/works/8.png",
     },
     {
         title: "Todo App - Task Management Application",
@@ -98,7 +98,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/Brand_Kiln_Todo",
         live: "https://brand-kiln-todo.vercel.app/",
-        img: "/public/works/3.png",
+        img: "/works/3.png",
     },
 
     {
@@ -118,7 +118,7 @@ const projects = [
         ],
         github: "https://github.com/yourusername/good-food-recipe-app",
         live: "https://goodfood01.netlify.app",
-        img: "/public/works/6.png",
+        img: "/works/6.png",
     },
     {
         title: "SpeedTyping - Typing Speed Test",
@@ -136,7 +136,7 @@ const projects = [
         ],
         github: "https://github.com/yourusername/typing-speed-test",
         live: "https://typingspeed-demo.netlify.app",
-        img: "/public/works/7.png",
+        img: "/works/7.png",
     },
     {
         title: "LineBeat - A Fitness Camp Website",
@@ -155,7 +155,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/GYM_WEBSITE",
         live: "https://line-beat-camp.vercel.app/",
-        img: "/public/works/5.png",
+        img: "/works/5.png",
     },
 
     {
@@ -175,7 +175,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/PromptCrafter",
         live: "https://prompt-crafter-eight.vercel.app/",
-        img: "/public/works/4.png",
+        img: "/works/4.png",
     },
     {
         title: "Notes App – Local Storage Based",
@@ -194,7 +194,7 @@ const projects = [
         ],
         github: "https://github.com/Mudaykirann/Notes-App",
         live: "https://notes-app-demo.vercel.app",
-        img: "/public/works/9.png",
+        img: "/works/9.png",
     }
 
 ];

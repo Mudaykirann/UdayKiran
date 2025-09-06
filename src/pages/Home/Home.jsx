@@ -1,11 +1,11 @@
 import React from 'react'
-import banner2 from '/public/bg1.jpeg';
-import profile from '/public/my1.jpeg';
+import banner2 from '/bg1.jpeg';
+import profile from '/my1.jpeg';
 import { Link } from 'react-router-dom';
 import cts from '/public/cts.png';
-import basket from '/public/Baskethunt.png';
-import reachify from '/public/reachify.png';
-import blog from '/public/blog.jpeg';
+import basket from '/Baskethunt.png';
+import reachify from '/reachify.png';
+import blog from '/blog.jpeg';
 import Projects from '../../components/Projects/Projects';
 
 

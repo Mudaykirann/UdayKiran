@@ -1,6 +1,6 @@
 
-import blog from '/public/blog.jpeg';
-import code from '/public/code.jpeg';
+import blog from '/blog.jpeg';
+import code from '/code.jpeg';
 
 
 function Blog() {
