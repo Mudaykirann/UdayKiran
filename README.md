@@ -1,12 +1,29 @@
-# React + Vite
+# 👋 Hello there! I'm UDAY KIRAN
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### 🚀 Passionate Web Developer & Backend Enthusiast
+I am a web developer with a knack for crafting engaging and user-friendly digital experiences. Currently, I am deep-diving into the world of Java Backend development and building scalable applications.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### 🛠 My Tech Stack
 
-## Expanding the ESLint configuration
+- **Languages:** Java (Core, JDBC), JavaScript, HTML5, CSS3, Python, SQL
+- **Frameworks & Libraries:** Spring Boot (Learning), Flask, Servlets, JSP
+- **Tools & Platforms:** Git, GitHub, IntelliJ IDEA, VS Code, Vercel
+- **Databases:** MySQL
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+### 🔭 What I’m Working On
+- ⚡ **Mastering Spring Boot:** Currently following a structured roadmap to build robust enterprise applications.
+- 🧩 **DSA:** Solving problems on LeetCode and HackerRank to sharpen my logic (Check out my `JAVA_Leetcode_Sols` repo!).
+- 🌐 **Full Stack Projects:** Integrating sleek frontends with powerful Java backends.
+
+---
+
+### 🤝 Connect with Me
+- **LinkedIn:** [uday-kiran-a0105b228](https://www.linkedin.com/in/uday-kiran-a0105b228)
+- **Portfolio:** [Visit My Portfolio](https://udaykiran-portfolio-seven.vercel.app/)
+- **HackerRank:** [udaykirankirru21](https://www.hackerrank.com/profile/udaykirankirru21)
+
+"Turning ideas into code, one commit at a time." 🚀
