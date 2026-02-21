@@ -7,10 +7,10 @@ I am a web developer with a knack for crafting engaging and user-friendly digita
 
 ### 🛠 My Tech Stack
 
-- **Languages:** Java (Core, JDBC), JavaScript, HTML5, CSS3, Python, SQL
-- **Frameworks & Libraries:** Spring Boot (Learning), Flask, Servlets, JSP
+- **Languages:** Java (Core) , JavaScript, HTML5, CSS3
+- **Frameworks & Libraries:** Spring Boot (Learning), ReactJS,JDBC,Hibernate, API's
 - **Tools & Platforms:** Git, GitHub, IntelliJ IDEA, VS Code, Vercel
-- **Databases:** MySQL
+- **Databases:** MySQL, 
 
 ---
 
