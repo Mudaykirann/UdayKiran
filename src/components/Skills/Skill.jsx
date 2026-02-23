@@ -1,7 +1,7 @@
 // Skills.tsx
 import { FaCuttlefish, FaJava, FaHtml5, FaCss3Alt, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaFigma } from "react-icons/fa";
 import { SiTailwindcss, SiExpress, SiMysql, SiPostgresql, SiPostman, SiJsonwebtokens, SiFirebase, SiVercel, SiNetlify, SiCanva, SiOracle } from "react-icons/si";
-import { SiC, SiCplusplus, SiLinux } from "react-icons/si";
+import { SiC, SiCplusplus, SiLinux, SiHibernate, SiSpringboot } from "react-icons/si";
 import { BiCodeCurly } from "react-icons/bi";
 import { FiKey } from "react-icons/fi";
 
@@ -12,13 +12,12 @@ const skills = [
     { name: "JavaScript", icon: <FaJs size={26} color='' className="text-yellow-400" /> },
     { name: "React", icon: <FaReact size={26} color='' className="text-cyan-400" /> },
     { name: "NodeJS", icon: <FaNodeJs size={26} color='' className="text-green-600" /> },
-    { name: "ExpressJS", icon: <SiExpress size={26} color='' className="text-gray-700" /> },
     { name: "Java", icon: <FaJava size={26} color='' className="text-red-600" /> },
+    { name: "Hibernate", icon: <SiHibernate size={26} color='' className="[#53911E]" /> },
+    { name: "Springboot", icon: <SiSpringboot size={26} color='' className="text-green-600" /> },
     { name: "C", icon: <SiC size={26} color='' className="text-blue-600" /> },
-    { name: "C++", icon: <SiCplusplus size={26} color='' className="text-blue-800" /> },
     { name: "MySQL", icon: <SiMysql size={26} color='' className="text-blue-700" /> },
     { name: "Oracle SQL", icon: <SiOracle size={26} color='' className="text-red-700" /> },
-    { name: "Linux", icon: <SiLinux size={26} color='' className="" /> },
     { name: "REST API", icon: <BiCodeCurly size={26} color='' className="text-indigo-600" /> },
     { name: "Postman", icon: <SiPostman size={26} color='' className="text-orange-500" /> },
     { name: "Git", icon: <FaGitAlt size={26} color='' className="text-orange-600" /> },
