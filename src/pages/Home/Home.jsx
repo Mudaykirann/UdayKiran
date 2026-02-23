@@ -20,11 +20,6 @@ const profiles = [
         description: "Practicing DSA and coding challenges to strengthen algorithms and data structures.",
         link: "https://www.geeksforgeeks.org/user/udaykiran001/",
     },
-    {
-        title: "Telegram - KwnX",
-        description: "Sharing tech resources, premium courses, interview prep, and handwritten notes.",
-        link: "https://t.me/aizensos1",
-    },
 ];
 
 
@@ -67,7 +62,7 @@ function Home() {
                     <p className='clash font-bold text-2xl'>For me, development isn’t just about building apps, it’s about building experiences.</p>
                     <Link to={'/about'}>
                         <button className="mt-8 border-2 border-black px-6 py-3 rubik font-bold hover:bg-black hover:text-white transition-all duration-300">
-                            LEARN MORE
+                            SEE MORE
                         </button>
                     </Link>
                 </div>
@@ -101,7 +96,10 @@ function Home() {
             <Projects />
 
             <section className="w-full px-6 py-8">
+
+                <h2 className="text-2xl clash lg:mx-24 md:text-3xl font-[500]">WORK-ING/ED IN</h2>
                 <div className='grid grid-cols-1 md:grid-cols-3 gap-4 max-w-7xl mx-auto'>
+
                     <div className='brand'>
                         <img src={cts} alt='cts' className='grayscale-100 hover:grayscale-0 transition duration-200' />
                     </div>
