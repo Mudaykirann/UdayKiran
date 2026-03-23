@@ -60,7 +60,7 @@ const Tabs = () => {
                             onClick={() => setActive(tab.id)}
                             className={`px-6 py-2 clash rounded-xl text-[14px] font-medium transition-all duration-300
                 ${active === tab.id
-                                    ? "bg-white text-black"
+                                    ? "bg-black text-white"
                                     : "text-gray-600 hover:bg-gray-200"
                                 }`}
                         >
