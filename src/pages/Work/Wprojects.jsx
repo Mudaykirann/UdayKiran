@@ -1,4 +1,7 @@
 import { FaReact, FaNodeJs, FaJs, FaCss3Alt, FaHtml5, FaGithubSquare } from "react-icons/fa";
+import { motion } from "framer-motion";
+import { useState } from "react";
+import "/src/index.css";
 import {
     SiMongodb,
     SiTailwindcss,
@@ -14,7 +17,7 @@ import {
     SiFramer,
     SiCss3,
     SiSwiper,
-    SiReactrouter, SiLucide, SiCanva, SiCssmodules
+    SiReactrouter, SiLucide, SiCanva, SiCssmodules,
 } from "react-icons/si";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { MdOutlineRestaurantMenu } from "react-icons/md";
@@ -24,6 +27,7 @@ import { FaLink } from "react-icons/fa6";
 const projects = [
     {
         title: "ProTrack – DSA Problem Tracker",
+        category: "FullStack",
         description:
             "A real-time tracker for LeetCode/DSA progress with issue logging, topic categorization, progress analytics, and favorites.",
         features: [
@@ -43,6 +47,7 @@ const projects = [
     },
     {
         title: "Link Vault - Link Management App",
+        category: "FullStack",
         description:
             "A FullStack  app to organize and manage links with categories, search, and quick access.",
         features: [
@@ -64,6 +69,7 @@ const projects = [
     },
     {
         title: "SecureVault - A Password Manager",
+        category: "Productivity",
         description:
             "A modern, client-side password manager with zero-knowledge architecture ensuring complete  security of user data.",
         features: [
@@ -83,6 +89,7 @@ const projects = [
     },
     {
         title: "Todo App - Task Management Application",
+        category: "Frontend",
         description:
             "A feature-rich task management application designed with a clean and responsive UI for productivity.",
         features: [
@@ -103,6 +110,7 @@ const projects = [
 
     {
         title: "Good Food Recipe App",
+        category: "Frontend",
         description:
             "An interactive recipe discovery app that lets users explore, search, and prepare delicious meals with step-by-step instructions.",
         features: [
@@ -122,6 +130,7 @@ const projects = [
     },
     {
         title: "SpeedTyping - Typing Speed Test",
+        category: "Frontend",
         description:
             "A modern and interactive typing speed test that improve their typing speed with real-time feedback and detailed statistics.",
         features: [
@@ -139,7 +148,45 @@ const projects = [
         img: "/works/7.png",
     },
     {
+        title: "SubSafe - Subscription Tracker",
+        category: "Productivity",
+        description:
+            "A premium subscription tracking app that helps you monitor monthly spend, get renewal alerts, and cancel what you don't need with AI-powered assistance.",
+        features: [
+            "Dashboard with monthly & yearly burn stats",
+            "Renewal alerts with urgency badges",
+            "Spending analytics & category breakdown",
+            "AI-powered cancellation email generator",
+        ],
+        techStack: [
+            { name: "React", icon: <FaReact className="text-sky-400" size={22} /> }
+        ],
+        github: "https://github.com/Mudaykirann/SubSafe",
+        live: "https://sub-safe-brown.vercel.app/",
+        img: "/works/subsafe.png",
+    },
+    {
+        title: "GitHub Profile Analyzer",
+        category: "Tools",
+        description:
+            "A developer analytics dashboard that allows users to analyze any GitHub profile by entering a username. It displays language usage, contribution insights, and top projects using data fetched from the GitHub API.",
+        features: [
+            "View profile stats like followers, repositories",
+            "Top repositories sorted by stars and popularity",
+            "Language usage visualized with charts",
+            "Repository search and filtering",
+        ],
+        techStack: [
+            { name: "React", icon: <FaReact className="text-sky-400" size={22} /> },
+            { name: "GitHub API", icon: <FaGithubSquare className="text-gray-300" size={22} /> },
+        ],
+        github: "https://github.com/Mudaykirann/Github-Profile-Analyzer-",
+        live: "https://github-profile-analyzer-opal.vercel.app/",
+        img: "/works/gitprofileanalyser.png",
+    },
+    {
         title: "LineBeat - A Fitness Camp Website",
+        category: "Frontend",
         description:
             "A responsive and engaging GYM website designed to showcase fitness services with a modern, colorful UI and smooth navigation.",
         features: [
@@ -160,6 +207,7 @@ const projects = [
 
     {
         title: "PromptCrafter – AI Prompt Workflow Tool",
+        category: "Tools",
         description:
             "A lightweight web app for crafting, organizing, and reusing high-quality AI prompts.",
         features: [
@@ -179,6 +227,7 @@ const projects = [
     },
     {
         title: "Notes App – Local Storage Based",
+        category: "Frontend",
         description:
             "A simple yet effective notes-taking application with full CRUD functionality.",
         features: [
@@ -199,66 +248,121 @@ const projects = [
 
 ];
 
+const tabs = [
+    "All",
+    "FullStack",
+    "Frontend",
+    "Tools",
+    "Security",
+    "Productivity"
+];
+
+
 
 function Wprojects() {
+
+    const [activeTab, setActiveTab] = useState("All");
+
+    const filteredProjects =
+        activeTab === "All"
+            ? projects
+            : projects.filter((p) => p.category === activeTab);
     return (
         <div>
+
+            {/* TABS */}
+            <div className="flex justify-center mb-12 px-4">
+                <div className="flex flex-wrap gap-2 sm:gap-3 md:gap-6 py-3 justify-center w-full">
+
+                    {tabs.map((tab) => (
+                        <button
+                            key={tab}
+                            onClick={() => setActiveTab(tab)}
+                            className={`relative font-medium py-2 px-3 sm:px-4 border rounded shadow text-xs sm:text-sm md:text-base lg:text-lg clash transition-all duration-500 ${activeTab === tab
+                                ? "bg-black text-white border-black"
+                                : "bg-white text-gray-800 border-gray-400 hover:bg-black hover:text-white"
+                                }`}
+                        >
+                            {tab}
+                        </button>
+                    ))}
+
+                </div>
+            </div>
             <section className="w-full py-6">
-                <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-7xl mx-auto">
-                    {projects.map((project, i) => (
-                        <div key={i} className="relative flex flex-col py-8">
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto px-4 md:px-6 lg:px-0">
+                    {filteredProjects.map((project, i) => (
+                        <motion.div
+                            key={i}
+                            className="relative flex flex-col h-full bg-white border border-gray-200 rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ delay: i * 0.1, duration: 0.3 }}
+                        >
                             {/* Image */}
-                            <div className="overflow-hidden ">
+                            <div className="overflow-hidden rounded-t-lg h-48">
                                 <img
                                     src={project.img}
                                     alt={project.title}
-                                    className="w-full h-auto object-cover transition-transform duration-300 hover:scale-105 cursor-pointer"
+                                    className="w-full h-full object-cover transition-transform duration-300 hover:scale-110 cursor-pointer"
                                 />
                             </div>
 
                             {/* Text Content */}
-                            <div className="mt-2 overflow-auto bg-[#f1f1f1] p-4 h-[352px] md:h-[464px] lg:h-[396px]">
-                                <h3 className="font-bold clash text-lg md:text-xl mb-3">
+                            <div className="flex flex-col flex-grow p-5 gap-4">
+                                {/* Title */}
+                                <h3 className="font-bold clash text-lg line-clamp-2 text-black">
                                     {project.title}
                                 </h3>
-                                <p className="rubik text-sm md:text-base text-gray-800 leading-relaxed">
+
+                                {/* Description */}
+                                <p className="rubik text-sm text-gray-700 leading-relaxed line-clamp-3">
                                     {project.description}
                                 </p>
-                                <div className="features py-4">
-                                    {project.features.map((feature, index) => (
-                                        <li key={index} className="text-sm md:text-base rubik text-gray-800 leading-relaxed list-style-disc ml-3">
+
+                                {/* Features */}
+                                <div className="space-y-1">
+                                    {project.features.slice(0, 3).map((feature, index) => (
+                                        <li key={index} className="text-xs rubik text-gray-600 list-disc ml-3">
                                             {feature}
                                         </li>
                                     ))}
                                 </div>
-                                <div className="flex flex-wrap items-center space-y-1 my-1">
+
+                                {/* Tech Stack */}
+                                <div className="flex flex-wrap gap-2 mt-auto pt-3">
                                     {project.techStack.map((tech, i) => (
-                                        <div key={i} className="flex items-center space-x-2 px-2 py-1">
+                                        <div
+                                            key={i}
+                                            className="flex items-center gap-1 bg-gray-100 px-2 py-1 rounded text-xs"
+                                            title={tech.name}
+                                        >
                                             {tech.icon}
-                                            <span className="text-sm clash font-medium">{tech.name}</span>
                                         </div>
                                     ))}
                                 </div>
-                                <div className="links flex items-center justify-between px-2 gap-2">
+
+                                {/* Links */}
+                                <div className="flex items-center justify-between gap-3 pt-4 border-t border-gray-200">
                                     <a
                                         href={project.github}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-3 clash inline-block font-medium underline underline-offset-2"
+                                        className="clash text-sm font-medium text-black hover:underline transition-all"
                                     >
-                                        Github
+                                        GitHub
                                     </a>
                                     <a
                                         href={project.live}
                                         target="_blank"
                                         rel="noopener noreferrer"
-                                        className="mt-3 clash inline-block font-medium underline underline-offset-2"
+                                        className="clash text-sm font-medium text-black hover:underline transition-all"
                                     >
-                                        Live
+                                        Live Demo
                                     </a>
                                 </div>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
             </section>
