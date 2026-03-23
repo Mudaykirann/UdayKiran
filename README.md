@@ -23,7 +23,6 @@ I am a web developer with a knack for crafting engaging and user-friendly digita
 
 ### 🤝 Connect with Me
 - **LinkedIn:** [uday-kiran-a0105b228](https://www.linkedin.com/in/uday-kiran-a0105b228)
-- **Portfolio:** [Visit My Portfolio](https://udaykiran-portfolio-seven.vercel.app/)
 - **HackerRank:** [udaykirankirru21](https://www.hackerrank.com/profile/udaykirankirru21)
 
 "Turning ideas into code, one commit at a time." 🚀
