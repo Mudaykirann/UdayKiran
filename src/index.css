@@ -1,0 +1,97 @@
+/* ── Global base ───────────────────────────────── */
+html {
+    scroll-behavior: smooth;
+}
+
+::selection {
+    background: #000;
+    color: #fff;
+}
+
+::-moz-selection {
+    background: #000;
+    color: #fff;
+}
+
+.clash {
+    font-family: 'Clash Grotesk', sans-serif;
+}
+
+.rubik {
+    font-family: "Rubik", sans-serif;
+}
+
+button {
+    cursor: pointer;
+}
+
+ul li {
+    list-style: none;
+    cursor: pointer;
+}
+
+img {
+    cursor: pointer;
+}
+
+.hide-scrollbar {
+    /* For Internet Explorer, Edge */
+    -ms-overflow-style: none;
+    /* For Firefox */
+    scrollbar-width: none;
+    /* Ensure content is scrollable */
+    overflow-y: scroll;
+}
+
+/* For Chrome, Safari, and Opera (WebKit browsers) */
+.hide-scrollbar::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+    /* Also hide horizontal if necessary */
+}
+
+/* ── Custom Cursor ─────────────────────────────── */
+@media (pointer: fine) {
+    html.custom-cursor-active,
+    html.custom-cursor-active * {
+        cursor: none !important;
+    }
+}
+
+.cursor-dot {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 8px;
+    height: 8px;
+    background: #000;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999999;
+    will-change: transform, opacity;
+    transition: opacity 0.15s ease;
+    display: none;
+}
+
+.cursor-ring {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 30px;
+    border: 1.5px solid #000;
+    border-radius: 50%;
+    pointer-events: none;
+    z-index: 999998;
+    will-change: transform, width, height, opacity;
+    transition: width 0.22s ease, height 0.22s ease, opacity 0.22s ease;
+    display: none;
+}
+
+@media (pointer: fine) {
+    .cursor-dot,
+    .cursor-ring {
+        display: block;
+    }
+}
